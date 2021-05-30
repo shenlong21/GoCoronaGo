@@ -1,0 +1,8 @@
+.navbar-hover :hover{
+    border-bottom: 2px black solid !important;
+    /* background-color: #eee; */
+}
+
+.navbar-open {
+    text-decoration: underline;
+}
