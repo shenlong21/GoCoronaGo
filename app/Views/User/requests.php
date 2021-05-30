@@ -9,6 +9,8 @@
         <h5 class="h5 my-3"><strong>REQUESTS</strong></h5>
         <div class="form-text">Here you will get all the requests that were made by the users for promotions.</div>
         <hr>
+
+        <?php if(!empty( $requests )): ?>
         <div class="m-3 table-responsive">
             <table class="table table-borderless">
                 <tbody>
@@ -41,8 +43,12 @@
                     ?>
                 </tbody>
             </table>
-        
         </div>
+        <?php else: ?>
+            <div class="text-center text-muted form-text py-5 my-5">No Requests !</div>
+            <hr> 
+
+        <?php endif; ?>
 
     </div> 
 <?= $this->endSection('content') ?>
